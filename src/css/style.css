@@ -1,0 +1,111 @@
+body {
+  background-image: url(../images/bg-repeat.jpg);
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin: 12px 50px;
+  justify-content: center;
+  gap: 60px;
+}
+
+.container .texto {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container .info {
+  width: 300px;
+}
+
+.container .texto h2 {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 11px;
+}
+
+.container .texto p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container .formulario {
+  background: white;
+  display: block;
+  height: 378px;
+  width: 340px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 0.5px rgb(100, 97, 97);
+}
+
+.container .formulario .input {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: #000 1px solid;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.container .formulario .textarea {
+  height: 100px;
+}
+
+.container .formulario .input:focus {
+  outline: 0;
+}
+
+.container .formulario .enviar {
+  width: 300px;
+  height: 41px;
+  border: none;
+  background-color: #3ccc87;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.container .formulario .enviar:hover {
+  background-color: #59f1a8;
+}
+
+.campoobrigatorio {
+  position: relative;
+}
+
+.container .formulario .erro {
+  color: red;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.container .formulario .erro.negado,
+.container .formulario .input.negado {
+  opacity: 1;
+  border-color: #f52e2e;
+}
+
+.container .formulario .permitido {
+  border-color: #00c22b;
+}
